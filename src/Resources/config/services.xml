@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <defaults autowire="true" autoconfigure="true"/>
+
+        <prototype namespace="TwinElements\ManualBundle\" resource="../../../src/*"
+                   exclude="../../../src/{DependencyInjection,Entity,Tests}"/>
+
+        <prototype namespace="TwinElements\ManualBundle\Controller\" resource="../../../src/Controller/*">
+            <tag name="controller.service_arguments"/>
+<!--            <bind key="$adminLocale">%admin_locale%</bind>-->
+        </prototype>
+
+        <service id="TwinElements\ManualBundle\AdminMenu">
+            <tag name="twin_elements.admin_menu"/>
+        </service>
+
+    </services>
+</container>

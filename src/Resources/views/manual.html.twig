@@ -1,0 +1,38 @@
+{% extends '@TwinElementsAdmin/core/list.html.twig' %}
+
+{% block title %}Instrukcja użytkowania{% endblock %}
+
+{% block list %}
+    <div class="pt-4 pb-4 pl-2 pr-2">
+        {% include '@TwinElementsManual/table_of_contents.html.twig' %}
+        {% include '@TwinElementsManual/page/index.html.twig' %}
+        <hr>
+        {% include '@TwinElementsManual/menu/index.html.twig' %}
+        <hr>
+        {% include '@TwinElementsManual/tinymce/index.html.twig' %}
+        <hr>
+        {% include '@TwinElementsManual/filemanager/index.html.twig' %}
+        <hr>
+        {% include '@TwinElementsManual/seo/index.html.twig' %}
+        <hr>
+        <a name="settings"></a>
+        <h2>Ustawienia</h2>
+        <div>
+<p>W ustawieniach można zmienić adresy email dla formularzy, nazwę firmy, adres, numery kontakowe.</p>
+            <p>Po wprowadzeniu zmian zależy kliknąć w przycisk <button type="button" class="btn btn-primary">Aktualizuj tłumaczenia</button>, który znajduje się w prawym górnym rogu (<a
+                        href="{{ path('dictionary_main', {'category': 'settings'}) }}" class="text-primary">przejdź</a>) </p>
+        </div>
+        <hr>
+        <a name="dictionary"></a>
+        <h2>Słownik</h2>
+        <div>
+            <p>W słowniku można zmieniać pojedyńcze słowa czy frazy na stronie internetowej.</p>
+            <p>Po wprowadzeniu zmian zależy kliknąć w przycisk <button type="button" class="btn btn-primary">Aktualizuj tłumaczenia</button>, który znajduje się w prawym górnym rogu (<a
+                        href="{{ path('dictionary_main', {'category': 'translations'}) }}" class="text-primary">przejdź</a>) </p>
+        </div>
+        <hr>
+        {% include '@TwinElementsManual/users/index.html.twig' %}
+    </div>
+{% endblock %}
+
+

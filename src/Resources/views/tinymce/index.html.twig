@@ -1,0 +1,275 @@
+<h2 id="tinymce-manual">Tinymce (redaktor treści)</h2>
+<div>
+    <ul>
+        <li class="mb-8">
+            <h4 id="adding-image-manual">Dodawanie zdjeć</h4>
+            1.Klikamy w odpowiednią ikonę w panelu edytora treści <img
+                    src="{{ asset('bundles/twinelementsmanual/tinymce/image-icon.png') }}" alt=""
+                    class="ml-2 border"><br>
+            2.Następnie klikamy w ikonę Upload/Przekaż plik. <img
+                    src="{{ asset('bundles/twinelementsmanual/tinymce/tinymce-image-upload-icon.png') }}" alt=""
+                    class="ml-2 border"><br>
+            3.Otwiera sie <a href="#filemanager"><u>Manager plików</u></a>. Wybieramy zdjęcie dodane już do galerii albo
+            dodajemy nowe zdjęcie.<br>
+            <p class="alert alert-warning mt-2">
+                Zdjęcia, które będą wyświetlać się za pomocą edytora treści należy odpowiednio dociąć (jeżeli trzeba)
+                oraz skompresować (np. za pomocą strony tinypng.com)
+            </p>
+            4.Po wybraniu/dodaniu zdjęcia klikamy <u>Zapisz</u>
+        </li>
+        <li class="mb-8">
+            <h4 id="edit-image-manual">Edycja zdjęcia</h4>
+            Po dodaniu zdjęcia, należy go odpowiednio edytować.<br>
+            W tym celu należy kliknąć zdjęcie w edytorze. Zostanie ono automatycznie zaznaczone oraz pojawi się pasek
+            narzędzi. <img
+                    src="{{ asset('bundles/twinelementsmanual/tinymce/tinymce-image-edit.png') }}" alt=""><br>
+            Aby zdjęcie prawidłowo wyświetlało się na urządzeniach mobilnych należy:<br>
+            1.Kliknąć w ikonę obrazka <img
+                    src="{{ asset('bundles/twinelementsmanual/tinymce/tinymce-bootstrap-image-icon.png') }}" alt=""
+                    class="border ml-2"><br>
+            2.W oknie dialogowym zaznaczyć opcję <u>YES</u> przy właściwości <u>Responsive</u>. <img
+                    src="{{ asset('bundles/twinelementsmanual/tinymce/tinimce-bootsrap-image-responsive.png') }}" alt=""
+                    class="border ml-2"><br>
+            3.Kliknąć w przycisk <u>OK</u><br>
+            4.Zapisać zmiany.
+        </li>
+        <li class="mb-8">
+            <h4 id="add-film-manual">Dodawanie filmów</h4>
+            1.Klikamy w odpowiednią ikonę w panelu edytora treści <img
+                    src="{{ asset('bundles/twinelementsmanual/tinymce/tinymce-film-icon.png') }}" alt=""
+                    class="ml-2 border"><br>
+            2.W oknie dialogowym wybrać<br>
+            albo ikonę <u>UPLOAD/Przekaż plik</u> <img
+                    src="{{ asset('bundles/twinelementsmanual/tinymce/upload-icon.png') }}" alt=""> i wybrać odpowiedni
+            film z
+            <a href="#filemanager"><u>Managera plików</u></a><br>
+            albo wybrać opcję <u>Osadź</u> żeby wstawić kod Youtube/Vimeo.
+            3.Zapisać zmiany.
+        </li>
+        <li class="mb-8">
+            <h4 id="anchor-manual">Kotwice</h4>
+            <p>Kotwica to inaczej odsyłacz, który umieszcza na stronie. Jest on widoczny i klikany dla użytkownika. </p>
+            1.Zaczynamy od zaznaczenia kursorem miejsca, w które chcemy przenieść użytkownika <img
+                    src="{{ asset('bundles/twinelementsmanual/tinymce/anchor-cursor.png') }}" alt="" class="border"><br>
+            2.Wejść do <u>Wstaw</u> -> <u>Anchor(Kotwica)</u> <img
+                    src="{{ asset('bundles/twinelementsmanual/tinymce/anchor.png') }}" class="border"><br>
+            3.W oknie dialogowym wpisać własne ID kotwicy bez spacji i znaków specjalnych. np. "to_id_kotwicy" <img
+                    src="{{ asset('bundles/twinelementsmanual/tinymce/anchor_dialog.png') }}" alt="" class="border"><br>
+            4.Następnie zaznaczamy frazę albo wybieramy obrazek, które mają przenosić do miejsca, zaznaczonego przez nas
+            wcześniej, i klikamy w ikonę <u>Podlinkuj</u>
+            <img src="{{ asset('bundles/twinelementsmanual/tinymce/link.png') }}" alt=""><br>
+            5.W oknie dialogowym pojawi się pole <u>Kotwice</u>, należy kliknąć w to pole i wybrać odpowiednią kotwicę.
+            <img src="{{ asset('bundles/twinelementsmanual/tinymce/anchor-dialog-choose-link.png') }}" alt=""><br>
+            6.Klikamy <u>Zapisz</u><br>
+            7.Zapisujemy zmiany na podstronie.
+        </li>
+        <li class="mb-8">
+            <h4 id="headers-manual">Nagłówki</h4>
+            Aby wstawić nagłówek należy wpisać fraże, następnie ją zaznaczyć.<br>
+            Następnie przejść do Format -> Bloki -> i wybrać odpowiedni nagłówek. <img
+                    src="{{ asset('bundles/twinelementsmanual/tinymce/tinymce-header.png') }}" alt=""
+                    class="border"><br>
+            <div class="alert alert-info mt-3">
+                <h6>Dla zaawansowanych!</h6>
+                <p class="mb-0">Jeżeli chcemy dodać nagłówek np H2, który ma wyglądać jak nagłówek H1 należy w kodzie
+                    źródłowym HTML dopisać do nagłówka h2 clasę h1. (<u>Narzędzia -> Kod źródłowy</u>)
+                    <img src="{{ asset('bundles/twinelementsmanual/tinymce/header-code.png') }}" alt=""><br>Mamy do
+                    dyspozycji 6 klas: <b>h1, h2, h3, h4, h5, h6</b></p>
+            </div>
+
+        </li>
+        <li class="mb-8">
+            <h4 id="tinymce-cols-manual">Kolumny</h4>
+            <p>Aby wpełni zrozumieć czym są tzw. gridy warto zapoznać się z oficjalną dokumentacja <a
+                        href="https://getbootstrap.com/docs/4.0/layout/grid/" rel="nofollow">Bootstrap 4</a></p>
+            <p class="alert alert-info">W skrócie. Każdy element na stronie można podzielić na 12 części. Połowa
+                kontenera to będzie 6/12, ćwierć kontenera 3/12 i tak dalej. To znaczy, ze jeżeli chcemy mieć 2 bloki po
+                50%, należy otworzyć 2 bloki 6/12 oraz 6/12. Jeżeli chcemy 3 bloki na całą szerokość kontenera, należy
+                dodać 3 bloki 4/12, 4/12, 4/12. Można także używać różne szerokości: np 9/12 oraz 3/12 - w wyniku
+                uzyskamy 1 szeroki kontener a obok niego 1 wąski.</p>
+            <ul>
+                <li>
+                    Aby dodać gotowy szablon z kolumnami należy kliknąć w przycisk: <img
+                            src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-grid-icon.png') }}" alt="">
+                </li>
+                <li>
+                    W oknie dialogowym mamy do wybrania 3 rodzaje szablonów: <u>2 kolumny</u>, <u>3 kolumny</u> oraz <u>4
+                        kolumny</u> oraz różne warianty tych szablonów.<br>
+                    <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-grid-templates.png') }}" alt=""
+                         class="border">
+                </li>
+                <li>
+                    Wybieramy jedez z szablonów i klikamy w przycisk
+                    <button type="button" class="btn btn-primary">OK</button>
+                </li>
+                <li>
+                    W edytorze pojawiają się bloki w których można edytować treść, dodawać zdjęcia, filmy i td.<br>
+                    <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-added-grid-template.png') }}"
+                         alt="" class="border mb-6"><br>
+                    <p><b>Po edycji</b></p>
+                    <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-edited-grid-template.png') }}"
+                         alt="" class="border">
+                </li>
+                <li>
+                    Po kliknięciu w rzęd nad blokami pojawi się pasek z nazwą <u>Edit row</u>. W prawej części tego
+                    paska jest możliwość dodania nowego rzędu przed, obecnym, edycję obecnego, dodanie nowego rzędu po
+                    obecnym albo usunięcie obecnego.
+                    <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstra-grid-edit-sidebar.png') }}" alt=""
+                         class="border">
+                </li>
+                <li>
+                    Po kliknięciu w konkretny blok pojawia sie pasek, z możliwościa jego edycji<br>
+                    <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-edit-col-sidebar.png') }}" alt=""
+                         class="border"><br>
+                    <p class="mt-5">Można dodać nowy blok przed i po albo go skasować. Ważnym elementem jest jego
+                        edycja. W edycji można
+                        wybrać odpowiednią szerokość w zależności od szerokości ekranu. Np dla telefonów będzie na 100%
+                        szerokości ekranu, na tabletach tylko 50% (6/12) a na komputerze będzie to tylko 3/12.<br>
+                        Działa tutaj zasada Mobile first. Najpierw wybieramy szerokość dla telefonu (domyślna wartość),
+                        następnie dla SM (małe ekrany), dalej MD (średnie ekrany) i na samym końcu LG (duże ekrany).</p>
+                    <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-col-edit-width.png') }}" alt=""
+                         class="border">
+                    <div class="alert alert-info mt-6">
+                        <h6>Dla zaawansowanych</h6>
+                        <p>Najprosciej edytować bloki za pomocą języka HTML w kodzie źródłowym. Przykład 4
+                            kolumny(bloków) na komputerze, 3 kolumny na tablecie, 2 kolumny na małych ekranach oraz 1
+                            kolumna na telefonie. Jak było wspominane wcześnie, wykorzystujemy zasadę <u>mobile
+                                first</u>: telefony domyślna wartość col-12, następnie pozostałe SMALL(col-sm-6),
+                            MEDIUM(col-md-4), LARGE(col-lg-3).</p>
+                        <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-grid-html-code.png') }}"
+                             alt="">
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="mb-8">
+            <h4 id="table-manual">Tabele</h4>
+            <ul>
+                <li>
+                    <h6>Zwykła tabela</h6>
+                    <p>Wybieramy: Wstaw -> Tabela -> zaznaczamy rozmiar<br>
+                        <img src="{{ asset('bundles/twinelementsmanual/tinymce/tinymce-table.png') }}" alt=""
+                             class="border">
+                    </p>
+                </li>
+                <li>
+                    <h6>Tabela Bootstrap</h6>
+                    <p>Aby wstawic tabelę Bootstrap należy wybrać odpowiednią ikonę <img
+                                src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-table.png') }}" alt=""
+                                class="border"></p>
+                    <p>W oknie dialogowym można w pełni skonfigurować wygląd całej tabeli.<br>
+                        <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-table-dialog.png') }}" alt=""
+                             class="border mb-4"><br>
+                        - Nagłówek tabeli<br>
+                        - Nagłówek poziomy<br>
+                        - Ciemny motyw<br>
+                        - Zaznaczenie wiersza po najechaniu<br>
+                        - Małe odstępy<br>
+                        - Podświetlenie wierszy tabli co drugi<br>
+                        - Responsywność (zalecana opcja <u>Always responsive</u>). Wybór zależy od konkretnych
+                        danych.<br>
+                        - Obramowanie
+                    </p>
+
+                </li>
+            </ul>
+            <p class="alert alert-info">Aby zmienić szerokość kolumny należy wybrać tabelę i kursorem przenieść granicę
+                pomiędzy
+                kolumnami. W praktyce, ze względu na responsywność stron internetowych, ręczna zmiana szerokości
+                nie jest zalecana.</p>
+        </li>
+        <li class="mb-8">
+            <h4 id="colors-manual">Kolory</h4>
+            <p>Aby zmienić kolor tekstu należy zaznaczyć akapit, najechać na sekcję <i>Akapit -> Text styles -> Kolor ->
+                    wybrać odpowiedni kolor</i><br>
+                <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-text-color.png') }}" alt=""
+                     class="border mb-6"><br>
+                Kolor tła zmienia sie w dokładnie taki sam sposób.
+            </p>
+            <p>Jeżeli potrzebuemy zmienić kolor tylko jednego słowa albo jego tło należy użyć narzędzi standardowych
+                <img src="{{ asset('bundles/twinelementsmanual/tinymce/colors-icons.png') }}" alt="" class="border mt-4"></p>
+        </li>
+        <li class="mb-8">
+            <h4 id="margins-manual">Odstępy</h4>
+            <p>Aby zmienić odstępy należy najechać na sekcję <i>Akapit -> Text styles -> Margin albo Padding ->
+                    Wybieramy rozmiar ekranu -> Wybieramy odpowiedni margines</i><br>
+                Jeżeli edytujemy tekst - wybieramy <u>Text styles</u>, jeżeli blok - <u>Block styles</u>.<br>
+                <u>Padding</u> określa przestrzeń wokół danego elementu, natomiast <u>margines</u> przestrzeń pomiędzy
+                elementami.
+            </p>
+            <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-margins.png') }}" alt="">
+        </li>
+        <li class="mb-8">
+            <h4 id="buttons-links-manual">Przyciski, linkowanie</h4>
+            <ul>
+                <li>
+                    <h6>Podlinkowanie</h6>
+                    Aby wstawić link, należy zaznaczyć treść, która ma zostać podlinkowana oraz kliknąć w ikone LINK
+                    <img src="{{ asset('bundles/twinelementsmanual/tinymce/tinymce-link.png') }}" alt=""><br>
+                    W oknie dialogowym wpisujemy link w polu Url albo wybieramy plik z managera plików.<br>
+                    <img src="{{ asset('bundles/twinelementsmanual/tinymce/tinymce-link-dialog.png') }}" alt=""
+                         class="border mt-5 mb-5"><br>
+                    W polu <b>Tytuł</b> należy wpisać tekst wspomagający, który pojawi się po najechaniu<br>
+                    W pole <b>Open link in...</b> wybieramy akcję: nic nie robimy, albo otwieramy w nowym oknie.<br>
+                    Klikamy
+                    <button class="btn btn-primary" type="button">Zapisz</button>
+                </li>
+                <li>
+                    <h6>Przycisk</h6>
+                    <p>Aby wstawić przycisk, należy ustawić kursor w miejscu, gdzie ma pojawić się przycisk.<br>
+                        <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-button.png') }}" alt=""
+                             class="mt-5">
+                    </p>
+
+                    <p>Otwiera się okno dialogowe z możliwością skonfigurowania przycisku</p>
+                    <img src="{{ asset('bundles/twinelementsmanual/tinymce/bootstrap-button-dialog.png') }}" alt="" class="border"><br>
+                    <p class="mt-4">
+                        Wybieramy:<br>
+                        - Wygląd (styl)<br>
+                        - Rozmiar<br>
+                        - Typ: przycisk, link czy pole input. W zależności od wybranej opcji pojawia się dodatkowe
+                        ustawienia. Dla linku - możliwość wstawienia adresu URL, dla przycisku oraz input ustawienia
+                        związane z formularzem.<br>
+                        - Ikona<br>
+                        - Ustawienie szerokości przycisku<br>
+                        - Tekst, który znajdzie się w treści
+                    </p>
+                    <p>Po ustawieniu danych należy kliknąć w
+                        <button type="button" class="btn btn-primary">OK</button>
+                    </p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h4 id="lists-manual">Listy</h4>
+            <ul>
+                <li>
+                    <p>Żeby utworzyć listę należy ustawić w edytorze kursor oraz kliknąć w jeden z dwóch przycisków (lista numeryczna albo wypunktowana)
+                        <img src="{{ asset('bundles/twinelementsmanual/tinymce/list-buttons.png') }}" alt=""></p>
+                </li>
+                <li>
+                    <p>Po kliknięciu w edytorze pojawi się odpowiednia lista.</p>
+                </li>
+                <li>
+                    <p>Aby utworzyć kolejny element listy należy wcisnąć <u>ENTER</u></p>
+                </li>
+                <li>
+                    <p>Aby zrobić zagnieżdzenie listy należy nacisnąć <u>TAB</u><br>
+                        <img src="{{ asset('bundles/twinelementsmanual/tinymce/tinymce-list-second-floor.png') }}" alt="" class="border mt-4">
+                    </p>
+                </li>
+                <li>
+                    <p>Żeby wrócic na pierwszy poziom należy ustawić kursor i wcisnąć jednocześnie <u>SHIFT + TAB</u><br>
+                        <img src="{{ asset('bundles/twinelementsmanual/tinymce/tinymce-list-back-to-first-floor.png') }}" alt="" class="border mt-4">
+                    </p>
+                </li>
+                <li>
+                    <p>Żeby zamknąć listę i kontynuować pisanie treści należy ustawić kursor na ostatnim pustym elemencie listy i kliknąć w ikonę aktualnie wybranej listy
+                        <img src="{{ asset('bundles/twinelementsmanual/tinymce/list-buttons.png') }}" alt=""><br>
+                        <img src="{{ asset('bundles/twinelementsmanual/tinymce/tinymce-list-close.png') }}" alt="" class="border mt-4">
+                    </p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
