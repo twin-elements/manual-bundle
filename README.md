@@ -1,7 +1,8 @@
 #Installation
-1.composer 
+###1.Install
+```composer require twin-elements/manual-bundle```
 
-2.Add to routes.yaml
+###2.Add to routes.yaml
 ```
 te_manual:
     resource: "@TwinElementsManualBundle/Controller/"
@@ -14,3 +15,4 @@ te_manual:
         _admin_locale: '%admin_locale%'
     options: { i18n: false }
 ```
+###3.Done
